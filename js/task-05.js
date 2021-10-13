@@ -1,12 +1,15 @@
-const input = document.querySelector('#name-input');
-const message = document.querySelector('#name-output');
+const refs = {
+ input: document.querySelector('#name-input'),
+ message: document.querySelector('#name-output')
+}
+
 
 const handleClick = () => {    
-    if (input.value.length === 0) {
-        message.textContent = "Anonymous";
+    if (refs.input.value.length === 0) {
+        refs.message.textContent = "Anonymous";
     } else {
-        message.textContent = input.value;
+        refs.message.textContent = refs.input.value;
     };
 };
 
-input.addEventListener("input", handleClick);
+refs.input.addEventListener("input", handleClick);
