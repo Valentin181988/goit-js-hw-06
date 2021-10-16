@@ -33,8 +33,7 @@ destroy.addEventListener('click', () => {
 });
 
 function destroyBoxes() {
-  input.blur()
-  boxes.innerHTML = "";
+    boxes.innerHTML = "";
 }
 
  function getRandomHexColor() {
