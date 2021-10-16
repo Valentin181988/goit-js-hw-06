@@ -21,6 +21,6 @@ images.forEach((img) => {
   html += `<li class="list"><img class="size" src="${img.url}" alt="${img.alt}"></li>`
 });
 
-console.log(html)
+console.log(html);
 
 gallery.insertAdjacentHTML("beforeend", html);
