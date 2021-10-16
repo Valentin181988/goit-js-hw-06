@@ -4,8 +4,6 @@ const input = document.querySelector('input');
 const boxes = document.querySelector('#boxes');
 input.focus()
 
-
-
 create.addEventListener('click', () => {
   createBoxes(input.value)
 });
@@ -33,7 +31,8 @@ destroy.addEventListener('click', () => {
 });
 
 function destroyBoxes() {
-    boxes.innerHTML = "";
+  boxes.innerHTML = "";
+  input.value = "";
 }
 
  function getRandomHexColor() {
