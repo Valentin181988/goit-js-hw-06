@@ -17,3 +17,14 @@ input.addEventListener('blur', (event) => {
         }
     }
 });
+
+
+input.addEventListener('blur', () => {
+    input.classList.add('invalid')
+
+    if (input.value.length === length) {
+        return input.classList.replace('invalid', 'valid');
+    }
+
+    return input.classList.replace('valid', 'invalid');
+});

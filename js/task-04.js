@@ -3,8 +3,8 @@ let counterValue = 0;
 const refs = {
  counter: document.querySelector('#counter'),
  value: counter.querySelector('#value'),
- firstBtn: counter.firstElementChild,
- secondBtn: counter.lastElementChild
+ firstBtn: counter.querySelector('[data-action="decrement"]'),
+ secondBtn: counter.querySelector('[data-action="increment"]')
 }
 
 const handleClickDecrement = () => {
@@ -17,3 +17,4 @@ const handleClickIncrement = () => {
 
 refs.firstBtn.addEventListener("click", handleClickDecrement);
 refs.secondBtn.addEventListener("click", handleClickIncrement);
+
